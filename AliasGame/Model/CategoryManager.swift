@@ -16,7 +16,7 @@ class CategoryManager {
     init(category: Category) {
         self.categoryTitle = category.title
         self.wordsArray = category.words
-        self.range = (category.words.count > 60) ? category.words.count - 60 : Int(category.words.count / 3)
+        self.range = (category.words.count > 61) ? category.words.count - 60 : Int(category.words.count / 3)
     }
     
     var nextWord: String {
