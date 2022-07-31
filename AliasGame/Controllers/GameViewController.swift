@@ -10,6 +10,7 @@ import AVFoundation
 
 class GameViewController: UIViewController {
     
+
     var player: AVAudioPlayer?
     
     var timer = Timer()
@@ -25,13 +26,19 @@ class GameViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var startGame: UIButton!
+
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        WordStore.shared.setWords(by: topic)
+        showWord()
         // Do any additional setup after loading the view.
     }
     
+
   
     @IBAction func refreshButton(_ sender: UIButton) {
         //Обновляет раунд и сбрасывает время
@@ -90,6 +97,23 @@ class GameViewController: UIViewController {
     }
     
     
+
+    var topic = "russian_words_nouns" {
+        didSet {
+            WordStore.shared.setWords(by: topic)
+        }
+    }
+    
+    @IBAction func nextPressed() {
+        wordLabel.text = ""
+        showWord()
+    }
+        
+    func showWord() {
+        wordLabel.text = WordStore.shared.randomWord()
+    }
+    /*
+
     // MARK: - Navigation
 
    
