@@ -75,11 +75,17 @@ class GameViewController: UIViewController {
             timer.invalidate() //disactivate timer
             totalScore = currentScore
             performSegue(withIdentifier: "resultVC", sender: nil)
+            
+            //Work NetworkManager
+//            NetworkManager.shared.fetchJoke { joke in
+//                wordLabel.text = joke.setup
+//            }
+            
             currentScore = 0
             cancelButton.alpha = 0.5
             doneButton.alpha = 0.5
             
-            playSound()
+//            playSound()
         }
     }
     
