@@ -97,8 +97,49 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="eIN-8L-AVE">
                                 <rect key="frame" x="19" y="88" width="376" height="776"/>
                                 <subviews>
+
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3n-eP-BND">
+                                        <rect key="frame" x="0.0" y="0.0" width="320.5" height="122"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pixil-frame-0-8" translatesAutoresizingMaskIntoConstraints="NO" id="8Xd-fL-ldc">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="133"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DM-Vw-u7k">
+                                                <rect key="frame" x="16" y="83" width="82" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="82" id="aNL-zj-4Ve"/>
+                                                    <constraint firstAttribute="height" constant="31" id="o1C-a0-2sb"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Выбрать">
+                                                    <backgroundConfiguration key="background" image="pixil-frame-0-7"/>
+                                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="1P1-tO-eQg"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="kTC-nB-paq"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTh-RW-rHl">
+                                                <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Праздники" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwf-uJ-mbt">
+                                                <rect key="frame" x="8" y="21" width="158.5" height="9.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите набор карточек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sh-he-VPn">
                                         <rect key="frame" x="85.5" y="0.0" width="205.5" height="42"/>
+
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="can-GU-3p5"/>
                                         </constraints>
@@ -109,6 +150,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-Wz-Gkx">
                                         <rect key="frame" x="0.0" y="94" width="376" height="682"/>
                                         <subviews>
+
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pixil-frame-0-8" translatesAutoresizingMaskIntoConstraints="NO" id="BQV-Fz-yAS">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="133"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUT-7U-Zyb">
+                                                <rect key="frame" x="16" y="83" width="82" height="31"/>
+
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3n-eP-BND">
                                                 <rect key="frame" x="0.0" y="0.0" width="376" height="153.5"/>
                                                 <subviews>
@@ -141,12 +190,60 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
+
                                                 <constraints>
                                                     <constraint firstItem="oHH-a2-tC6" firstAttribute="centerX" secondItem="r3n-eP-BND" secondAttribute="centerX" id="7fR-wb-aWs"/>
                                                     <constraint firstItem="oHH-a2-tC6" firstAttribute="centerY" secondItem="r3n-eP-BND" secondAttribute="centerY" id="J02-da-8gM"/>
                                                     <constraint firstItem="8Xd-fL-ldc" firstAttribute="centerY" secondItem="r3n-eP-BND" secondAttribute="centerY" id="idb-iX-4of"/>
                                                     <constraint firstItem="8Xd-fL-ldc" firstAttribute="centerX" secondItem="r3n-eP-BND" secondAttribute="centerX" id="yRc-P0-Ayg"/>
                                                 </constraints>
+
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Выбрать">
+                                                    <backgroundConfiguration key="background" image="pixil-frame-0-7"/>
+                                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="UAL-yh-JYS"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="MEv-HO-Q7r"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rs-j2-0Oj">
+                                                <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Животные" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-IJ-ViK">
+                                                <rect key="frame" x="8" y="21" width="158.5" height="9.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="HHM-IJ-ViK" secondAttribute="trailing" constant="154" id="35f-bO-cTx"/>
+                                            <constraint firstItem="HHM-IJ-ViK" firstAttribute="top" secondItem="jGd-Ew-vVW" secondAttribute="top" constant="21" id="Hg8-HP-AyU"/>
+                                            <constraint firstItem="HHM-IJ-ViK" firstAttribute="leading" secondItem="jGd-Ew-vVW" secondAttribute="leading" constant="8" id="OLK-lG-rhA"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Rs-j2-0Oj" secondAttribute="bottom" constant="13" id="Ppy-WR-Ulj"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Rs-j2-0Oj" secondAttribute="trailing" constant="8" id="U9l-bN-Ln6"/>
+                                            <constraint firstItem="AUT-7U-Zyb" firstAttribute="leading" secondItem="jGd-Ew-vVW" secondAttribute="leading" constant="16" id="ejc-Oc-WYe"/>
+                                            <constraint firstAttribute="bottom" secondItem="AUT-7U-Zyb" secondAttribute="bottom" constant="8" id="ux5-pa-rru"/>
+                                            <constraint firstItem="AUT-7U-Zyb" firstAttribute="top" secondItem="HHM-IJ-ViK" secondAttribute="bottom" constant="52.5" id="yWe-GX-T8N"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-HU-poY">
+                                        <rect key="frame" x="0.0" y="314" width="320.5" height="122"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pixil-frame-0-8" translatesAutoresizingMaskIntoConstraints="NO" id="dsG-QI-QGT">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="133"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-em-hTt">
+                                                <rect key="frame" x="16" y="83" width="82" height="31"/>
+
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGd-Ew-vVW">
                                                 <rect key="frame" x="0.0" y="176.5" width="376" height="153"/>
@@ -180,12 +277,60 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
+
                                                 <constraints>
                                                     <constraint firstItem="pJ7-B4-d1s" firstAttribute="centerX" secondItem="jGd-Ew-vVW" secondAttribute="centerX" id="1IO-7o-Nib"/>
                                                     <constraint firstItem="BQV-Fz-yAS" firstAttribute="centerX" secondItem="jGd-Ew-vVW" secondAttribute="centerX" id="3H1-6M-14W"/>
                                                     <constraint firstItem="BQV-Fz-yAS" firstAttribute="centerY" secondItem="jGd-Ew-vVW" secondAttribute="centerY" id="TVX-bT-g8t"/>
                                                     <constraint firstItem="pJ7-B4-d1s" firstAttribute="centerY" secondItem="jGd-Ew-vVW" secondAttribute="centerY" id="gQk-y9-yfU"/>
                                                 </constraints>
+
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Выбрать">
+                                                    <backgroundConfiguration key="background" image="pixil-frame-0-7"/>
+                                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="Z2b-Jm-b02"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="bvr-pH-04R"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-fV-zOo">
+                                                <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хобби" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGA-UM-d26">
+                                                <rect key="frame" x="8" y="21" width="158.5" height="9.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bFU-fV-zOo" secondAttribute="trailing" constant="8" id="8XY-QE-o45"/>
+                                            <constraint firstItem="OGA-UM-d26" firstAttribute="leading" secondItem="xEp-HU-poY" secondAttribute="leading" constant="8" id="Gs4-6p-lUu"/>
+                                            <constraint firstItem="EDw-em-hTt" firstAttribute="leading" secondItem="xEp-HU-poY" secondAttribute="leading" constant="16" id="NMj-4R-2nv"/>
+                                            <constraint firstAttribute="bottom" secondItem="EDw-em-hTt" secondAttribute="bottom" constant="8" id="dWM-4W-SVQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="bFU-fV-zOo" secondAttribute="bottom" constant="13" id="dX9-8d-zgd"/>
+                                            <constraint firstAttribute="trailing" secondItem="OGA-UM-d26" secondAttribute="trailing" constant="154" id="f7Y-0j-1GK"/>
+                                            <constraint firstItem="OGA-UM-d26" firstAttribute="top" secondItem="xEp-HU-poY" secondAttribute="top" constant="21" id="rrL-oF-QBJ"/>
+                                            <constraint firstItem="EDw-em-hTt" firstAttribute="top" secondItem="OGA-UM-d26" secondAttribute="bottom" constant="52.5" id="zOg-8a-Be8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-EI-8Rz">
+                                        <rect key="frame" x="0.0" y="471" width="320.5" height="122"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pixil-frame-0-8" translatesAutoresizingMaskIntoConstraints="NO" id="JwD-CR-mtX">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="133"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-Ic-akg">
+                                                <rect key="frame" x="16" y="83" width="82" height="31"/>
+
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-HU-poY">
                                                 <rect key="frame" x="0.0" y="352.5" width="376" height="153.5"/>
@@ -219,12 +364,39 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
+
                                                 <constraints>
                                                     <constraint firstItem="dsG-QI-QGT" firstAttribute="centerX" secondItem="xEp-HU-poY" secondAttribute="centerX" id="C1f-BG-GwA"/>
                                                     <constraint firstItem="ZdD-ag-lJH" firstAttribute="centerY" secondItem="xEp-HU-poY" secondAttribute="centerY" id="eW4-6b-bWZ"/>
                                                     <constraint firstItem="dsG-QI-QGT" firstAttribute="centerY" secondItem="xEp-HU-poY" secondAttribute="centerY" id="pKl-Dj-oM5"/>
                                                     <constraint firstItem="ZdD-ag-lJH" firstAttribute="centerX" secondItem="xEp-HU-poY" secondAttribute="centerX" id="yRG-MP-Wno"/>
                                                 </constraints>
+
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Выбрать">
+                                                    <backgroundConfiguration key="background" cornerRadius="6" image="pixil-frame-0-7"/>
+                                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="FAa-L4-olw"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="1FI-il-sqW"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQz-80-P9g">
+                                                <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жизнь " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOL-GE-plg">
+                                                <rect key="frame" x="8" y="21" width="158.5" height="28.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-EI-8Rz">
                                                 <rect key="frame" x="0.0" y="529" width="376" height="153"/>
@@ -265,6 +437,7 @@
                                                     <constraint firstItem="JwD-CR-mtX" firstAttribute="centerY" secondItem="aDm-EI-8Rz" secondAttribute="centerY" id="wjt-9N-Q2p"/>
                                                 </constraints>
                                             </view>
+
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -288,6 +461,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="D4u-mJ-C2r"/>
                     <connections>
+                        <outlet property="topicFour" destination="cXE-Ic-akg" id="MIu-Ed-VnZ"/>
+                        <outlet property="topicOne" destination="7DM-Vw-u7k" id="QDP-o1-P93"/>
+                        <outlet property="topicThree" destination="EDw-em-hTt" id="ASU-Zo-heC"/>
+                        <outlet property="topicTwo" destination="AUT-7U-Zyb" id="E1T-eG-pFP"/>
                         <segue destination="P8U-xo-8y0" kind="show" identifier="gameVC" id="dyF-9L-dsA"/>
                     </connections>
                 </viewController>
@@ -303,18 +480,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Слово" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-fu-NlX">
-                                <rect key="frame" x="55" y="382" width="304" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="Jy5-Wo-dnd"/>
-                                    <constraint firstAttribute="height" constant="74" id="udm-5F-hgN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="796853" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-Xf-w9h">
-                                <rect key="frame" x="0.0" y="44" width="540" height="808"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="796853" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-Xf-w9h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-22" translatesAutoresizingMaskIntoConstraints="NO" id="8iQ-nf-fVi">
                                 <rect key="frame" x="153.5" y="117" width="107" height="99"/>
@@ -383,6 +550,9 @@
                                 <buttonConfiguration key="configuration" style="filled">
                                     <backgroundConfiguration key="background" image="pixil-frame-0-13"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextPressed" destination="P8U-xo-8y0" eventType="touchUpInside" id="kM6-pz-s9Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-ya-pyR">
                                 <rect key="frame" x="336" y="230" width="50" height="50"/>
@@ -405,6 +575,16 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pixil-frame-0-9" translatesAutoresizingMaskIntoConstraints="NO" id="L2L-dA-kAg">
                                 <rect key="frame" x="62" y="288" width="332" height="288"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Слово" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-fu-NlX">
+                                <rect key="frame" x="55" y="382" width="304" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Jy5-Wo-dnd"/>
+                                    <constraint firstAttribute="height" constant="74" id="udm-5F-hgN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mJE-XZ-Vxv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -432,6 +612,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Tke-38-Yra"/>
                     <connections>
+                        <outlet property="nextButton" destination="7wN-Ag-DIX" id="fx8-Dc-osj"/>
+                        <outlet property="wordLabel" destination="UKT-fu-NlX" id="9iV-dq-Aqb"/>
                         <segue destination="2L9-KQ-KbY" kind="show" identifier="resultVC" id="Hct-ze-9HZ"/>
                     </connections>
                 </viewController>
@@ -625,6 +807,9 @@
             <point key="canvasLocation" x="60.869565217391312" y="868.52678571428567"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bvr-pH-04R"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="796853" width="540" height="960"/>
         <image name="9-94796_boston-pixel-phone-wallpaper-src-most-popular-google" width="1080" height="1920"/>
