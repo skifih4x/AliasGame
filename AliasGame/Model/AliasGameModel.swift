@@ -8,7 +8,9 @@
 import Foundation
 
 struct AliasGameModel {
+    
     var team: Team
+    var category: Category
     
     var timeLength: Int
     

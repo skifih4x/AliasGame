@@ -9,5 +9,17 @@ import Foundation
 
 class Team {
     let name: String = ""
-    var score: Int = 0
+    private var score: Int = 0
+    
+    func addPoint() {
+        self.score += 1
+    }
+    
+    func subtrackpoint(){
+        self.score -= 1
+    }
+    
+    var getScore: String {
+        return String(self.score)
+    }
 }
