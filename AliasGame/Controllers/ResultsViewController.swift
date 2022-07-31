@@ -23,8 +23,8 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        overAllResultLabel.text = overAllResults
-//        guessWordsLabel.text = guessWords
+//        overAllResultLabel.text = "overAllResults"
+//        guessWordsLabel≈ç.text = guessWords
 //        missedWordsLabel.text = missWords
     }
 
