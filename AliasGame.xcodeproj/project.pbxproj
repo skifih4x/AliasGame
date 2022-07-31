@@ -17,9 +17,13 @@
 		00D353D12891AF000086ACA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D353D02891AF000086ACA7 /* AppDelegate.swift */; };
 		00D353D32891AF000086ACA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D353D22891AF000086ACA7 /* SceneDelegate.swift */; };
 		00D353D52891AF000086ACA7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D353D42891AF000086ACA7 /* StartViewController.swift */; };
-		00D353D82891AF000086ACA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D353D62891AF000086ACA7 /* Main.storyboard */; };
 		00D353DA2891AF010086ACA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D353D92891AF010086ACA7 /* Assets.xcassets */; };
 		00D353DD2891AF010086ACA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D353DB2891AF010086ACA7 /* LaunchScreen.storyboard */; };
+		63D2675C2896A3E8005A33B3 /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2675B2896A3E8005A33B3 /* WordService.swift */; };
+		63D267612896A739005A33B3 /* english_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = 63D2675D2896A738005A33B3 /* english_words_nouns.csv */; };
+		63D267622896A739005A33B3 /* russian_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = 63D2675E2896A739005A33B3 /* russian_words_nouns.csv */; };
+		63D267632896A739005A33B3 /* random_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = 63D2675F2896A739005A33B3 /* random_words_nouns.csv */; };
+		63D267642896A739005A33B3 /* sport_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = 63D267602896A739005A33B3 /* sport_words_nouns.csv */; };
 		E4786A442893BFBF00F1B961 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4786A412893BFBF00F1B961 /* Rules.swift */; };
 		E4786A452893BFBF00F1B961 /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4786A422893BFBF00F1B961 /* CategoryManager.swift */; };
 		E4786A462893BFBF00F1B961 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4786A432893BFBF00F1B961 /* Category.swift */; };
@@ -38,10 +42,14 @@
 		00D353D02891AF000086ACA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D353D22891AF000086ACA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		00D353D42891AF000086ACA7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		00D353D72891AF000086ACA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00D353D92891AF010086ACA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00D353DC2891AF010086ACA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D353DE2891AF010086ACA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D2675B2896A3E8005A33B3 /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
+		63D2675D2896A738005A33B3 /* english_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english_words_nouns.csv; sourceTree = "<group>"; };
+		63D2675E2896A739005A33B3 /* russian_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = russian_words_nouns.csv; sourceTree = "<group>"; };
+		63D2675F2896A739005A33B3 /* random_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = random_words_nouns.csv; sourceTree = "<group>"; };
+		63D267602896A739005A33B3 /* sport_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sport_words_nouns.csv; sourceTree = "<group>"; };
 		E4786A412893BFBF00F1B961 /* Rules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		E4786A422893BFBF00F1B961 /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
 		E4786A432893BFBF00F1B961 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -84,7 +92,6 @@
 		00A473EB2891BD9E0095DE30 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				00D353D62891AF000086ACA7 /* Main.storyboard */,
 				00D353DB2891AF010086ACA7 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -135,9 +142,22 @@
 				00A473EB2891BD9E0095DE30 /* View */,
 				00A473E92891BD090095DE30 /* Controllers */,
 				00A473EA2891BD210095DE30 /* App */,
+				63D2675A2896A3BB005A33B3 /* WordService */,
 				00A473EC2891BDAC0095DE30 /* Resurces */,
 			);
 			path = AliasGame;
+			sourceTree = "<group>";
+		};
+		63D2675A2896A3BB005A33B3 /* WordService */ = {
+			isa = PBXGroup;
+			children = (
+				63D2675B2896A3E8005A33B3 /* WordService.swift */,
+				63D2675D2896A738005A33B3 /* english_words_nouns.csv */,
+				63D2675F2896A739005A33B3 /* random_words_nouns.csv */,
+				63D2675E2896A739005A33B3 /* russian_words_nouns.csv */,
+				63D267602896A739005A33B3 /* sport_words_nouns.csv */,
+			);
+			path = WordService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D353DD2891AF010086ACA7 /* LaunchScreen.storyboard in Resources */,
+				63D267642896A739005A33B3 /* sport_words_nouns.csv in Resources */,
 				00D353DA2891AF010086ACA7 /* Assets.xcassets in Resources */,
-				00D353D82891AF000086ACA7 /* Main.storyboard in Resources */,
+				63D267612896A739005A33B3 /* english_words_nouns.csv in Resources */,
+				63D267622896A739005A33B3 /* russian_words_nouns.csv in Resources */,
+				63D267632896A739005A33B3 /* random_words_nouns.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +242,7 @@
 				00A473EF2891C5CC0095DE30 /* NetworkManager.swift in Sources */,
 				E4786A452893BFBF00F1B961 /* CategoryManager.swift in Sources */,
 				00D353D12891AF000086ACA7 /* AppDelegate.swift in Sources */,
+				63D2675C2896A3E8005A33B3 /* WordService.swift in Sources */,
 				00A473F32891C5E60095DE30 /* AliasGameModel.swift in Sources */,
 				00A473E62891BCE50095DE30 /* GameViewController.swift in Sources */,
 				E4786A462893BFBF00F1B961 /* Category.swift in Sources */,
@@ -231,14 +255,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00D353D62891AF000086ACA7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00D353D72891AF000086ACA7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00D353DB2891AF010086ACA7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

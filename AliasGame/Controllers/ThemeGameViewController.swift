@@ -8,22 +8,37 @@
 import UIKit
 
 class ThemeGameViewController: UIViewController {
-
+    
+    @IBOutlet private weak var topicOne: UIButton!
+    @IBOutlet private weak var topicTwo: UIButton!
+    @IBOutlet private weak var topicThree: UIButton!
+    @IBOutlet private weak var topicFour: UIButton!
+    
+    private var selectedFilePath: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        topicOne.setTitle("English Words", for: .normal)
+        topicTwo.setTitle("Russian Words", for: .normal)
+        topicThree.setTitle("Sport Words", for: .normal)
+        topicFour.setTitle("Random Words", for: .normal)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        
+        switch sender.tag {
+        case 0: selectedFilePath = "english_words_nouns"
+        case 1: selectedFilePath = "russian_words_nouns"
+        case 2: selectedFilePath = "sport_words_nouns"
+        case 3: selectedFilePath = "random_words_nouns"
+        default:
+            return
+        }
+        
     }
-    */
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? GameViewController else { return }
+        vc.topic = selectedFilePath
+    }
 }
