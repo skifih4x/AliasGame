@@ -480,7 +480,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Слово" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-fu-NlX">
+                                <rect key="frame" x="55" y="382" width="304" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Jy5-Wo-dnd"/>
+                                    <constraint firstAttribute="height" constant="74" id="udm-5F-hgN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="796853" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-Xf-w9h">
+
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="796853" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-Xf-w9h">
+
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-22" translatesAutoresizingMaskIntoConstraints="NO" id="8iQ-nf-fVi">
@@ -524,6 +538,9 @@
                                         <buttonConfiguration key="configuration" style="filled">
                                             <backgroundConfiguration key="background" image="pixil-frame-0-12"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="P8U-xo-8y0" eventType="touchUpInside" id="1g3-Z1-BX9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2Z-Pk-pR9">
                                         <rect key="frame" x="248" y="0.0" width="111" height="111"/>
@@ -536,6 +553,9 @@
                                         <buttonConfiguration key="configuration" style="filled">
                                             <backgroundConfiguration key="background" image="pixil-frame-0-11"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="doneButton:" destination="P8U-xo-8y0" eventType="touchUpInside" id="3wU-5F-8dA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -551,7 +571,11 @@
                                     <backgroundConfiguration key="background" image="pixil-frame-0-13"/>
                                 </buttonConfiguration>
                                 <connections>
+
+                                    <action selector="startGame:" destination="P8U-xo-8y0" eventType="touchUpInside" id="oZy-Wr-MhT"/>
+
                                     <action selector="nextPressed" destination="P8U-xo-8y0" eventType="touchUpInside" id="kM6-pz-s9Z"/>
+
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-ya-pyR">
@@ -565,6 +589,9 @@
                                 <buttonConfiguration key="configuration" style="filled">
                                     <backgroundConfiguration key="background" image="pixil-frame-0-10"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="refreshButton:" destination="P8U-xo-8y0" eventType="touchUpInside" id="SVU-v4-TJH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Очки: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTn-ls-n0f">
                                 <rect key="frame" x="122" y="243" width="60.5" height="28.5"/>
@@ -590,12 +617,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mJE-XZ-Vxv" firstAttribute="trailing" secondItem="L2L-dA-kAg" secondAttribute="trailing" constant="20" id="13e-v3-sxx"/>
+                            <constraint firstItem="Y8h-Xf-w9h" firstAttribute="leading" secondItem="mJE-XZ-Vxv" secondAttribute="leading" id="16O-Dc-Ni4"/>
                             <constraint firstItem="A1m-Wr-JTP" firstAttribute="centerY" secondItem="uY2-dC-WaW" secondAttribute="centerY" constant="333.5" id="1tj-sS-NzM"/>
                             <constraint firstItem="UKT-fu-NlX" firstAttribute="centerX" secondItem="uY2-dC-WaW" secondAttribute="centerX" id="4Ol-pi-iMW"/>
                             <constraint firstItem="uTn-ls-n0f" firstAttribute="top" secondItem="8iQ-nf-fVi" secondAttribute="bottom" constant="27" id="6LG-xn-XXE"/>
+                            <constraint firstAttribute="bottom" secondItem="Y8h-Xf-w9h" secondAttribute="bottom" id="90b-0D-ebg"/>
                             <constraint firstItem="7wN-Ag-DIX" firstAttribute="centerY" secondItem="uY2-dC-WaW" secondAttribute="centerY" constant="216" id="FCN-QW-ubb"/>
                             <constraint firstItem="7wN-Ag-DIX" firstAttribute="centerX" secondItem="uY2-dC-WaW" secondAttribute="centerX" id="FOF-KR-gfq"/>
                             <constraint firstItem="Y8h-Xf-w9h" firstAttribute="leading" secondItem="mJE-XZ-Vxv" secondAttribute="leading" id="GUo-Of-K0D"/>
+                            <constraint firstItem="Y8h-Xf-w9h" firstAttribute="trailing" secondItem="mJE-XZ-Vxv" secondAttribute="trailing" id="GVh-uA-8Xt"/>
                             <constraint firstItem="8iQ-nf-fVi" firstAttribute="top" secondItem="mJE-XZ-Vxv" secondAttribute="top" constant="29" id="IsP-2r-sqW"/>
                             <constraint firstItem="7wN-Ag-DIX" firstAttribute="top" secondItem="L2L-dA-kAg" secondAttribute="bottom" constant="65" id="M8v-kp-0Ke"/>
                             <constraint firstItem="Y8h-Xf-w9h" firstAttribute="top" secondItem="uY2-dC-WaW" secondAttribute="topMargin" constant="-44" id="Mlq-u7-U0z"/>
@@ -605,6 +635,7 @@
                             <constraint firstItem="8iQ-nf-fVi" firstAttribute="centerX" secondItem="uY2-dC-WaW" secondAttribute="centerX" id="iLC-U6-DzC"/>
                             <constraint firstItem="mJE-XZ-Vxv" firstAttribute="trailing" secondItem="ubo-ya-pyR" secondAttribute="trailing" constant="28" id="iWo-a9-vQa"/>
                             <constraint firstItem="Y8h-Xf-w9h" firstAttribute="centerY" secondItem="uY2-dC-WaW" secondAttribute="centerY" id="mCh-yw-vfh"/>
+                            <constraint firstItem="Y8h-Xf-w9h" firstAttribute="top" secondItem="uY2-dC-WaW" secondAttribute="top" id="ocs-NY-Xn6"/>
                             <constraint firstItem="UKT-fu-NlX" firstAttribute="top" secondItem="ubo-ya-pyR" secondAttribute="bottom" constant="102" id="pTF-Bb-mVe"/>
                             <constraint firstItem="A1m-Wr-JTP" firstAttribute="centerX" secondItem="uY2-dC-WaW" secondAttribute="centerX" id="uM4-jc-ldY"/>
                             <constraint firstItem="UKT-fu-NlX" firstAttribute="top" secondItem="ubo-ya-pyR" secondAttribute="bottom" constant="102" id="yKT-x4-lqk"/>
@@ -612,8 +643,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="Tke-38-Yra"/>
                     <connections>
+
+                        <outlet property="cancelButton" destination="AB6-ND-oae" id="eyd-MI-XdA"/>
+                        <outlet property="doneButton" destination="e2Z-Pk-pR9" id="Yuf-ib-BQd"/>
+                        <outlet property="scoreLabel" destination="uTn-ls-n0f" id="AN6-uT-9ha"/>
+                        <outlet property="startGame" destination="7wN-Ag-DIX" id="QXn-cX-exx"/>
+                        <outlet property="totalTimeLabel" destination="zZA-Li-C2b" id="f1o-Ye-4bc"/>
+                        <outlet property="wordLabel" destination="UKT-fu-NlX" id="ELk-HQ-sm8"/>
+
                         <outlet property="nextButton" destination="7wN-Ag-DIX" id="fx8-Dc-osj"/>
                         <outlet property="wordLabel" destination="UKT-fu-NlX" id="9iV-dq-Aqb"/>
+
                         <segue destination="2L9-KQ-KbY" kind="show" identifier="resultVC" id="Hct-ze-9HZ"/>
                     </connections>
                 </viewController>
