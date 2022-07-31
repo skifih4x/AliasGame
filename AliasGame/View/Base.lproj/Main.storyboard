@@ -459,7 +459,7 @@
         <!--Results View Controller-->
         <scene sceneID="2wd-ej-DcQ">
             <objects>
-                <viewController id="2L9-KQ-KbY" customClass="ResultsViewController" customModule="AliasGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2L9-KQ-KbY" customClass="ResultsViewController" customModule="AliasGame" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Dy-FI-1G3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
