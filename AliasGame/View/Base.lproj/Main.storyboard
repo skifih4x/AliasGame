@@ -118,6 +118,10 @@
                                                     <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="1P1-tO-eQg"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="kTC-nB-paq"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTh-RW-rHl">
                                                 <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
@@ -150,7 +154,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="321" height="133"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUT-7U-Zyb">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUT-7U-Zyb">
                                                 <rect key="frame" x="16" y="83" width="82" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="82" id="3Q8-kW-bwe"/>
@@ -163,6 +167,10 @@
                                                     <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="UAL-yh-JYS"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="MEv-HO-Q7r"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rs-j2-0Oj">
                                                 <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
@@ -195,7 +203,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="321" height="133"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-em-hTt">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-em-hTt">
                                                 <rect key="frame" x="16" y="83" width="82" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="eCZ-Zn-EtM"/>
@@ -208,6 +216,10 @@
                                                     <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="Z2b-Jm-b02"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="bvr-pH-04R"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-fV-zOo">
                                                 <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
@@ -240,7 +252,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="321" height="133"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-Ic-akg">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-Ic-akg">
                                                 <rect key="frame" x="16" y="83" width="82" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="82" id="BGn-bd-7X3"/>
@@ -253,6 +265,10 @@
                                                     <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="mUH-3U-ezI" eventType="touchUpInside" id="FAa-L4-olw"/>
+                                                    <segue destination="P8U-xo-8y0" kind="show" id="1FI-il-sqW"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQz-80-P9g">
                                                 <rect key="frame" x="260.5" y="88.5" width="52" height="20.5"/>
@@ -305,6 +321,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="D4u-mJ-C2r"/>
                     <connections>
+                        <outlet property="topicFour" destination="cXE-Ic-akg" id="MIu-Ed-VnZ"/>
+                        <outlet property="topicOne" destination="7DM-Vw-u7k" id="QDP-o1-P93"/>
+                        <outlet property="topicThree" destination="EDw-em-hTt" id="ASU-Zo-heC"/>
+                        <outlet property="topicTwo" destination="AUT-7U-Zyb" id="E1T-eG-pFP"/>
                         <segue destination="P8U-xo-8y0" kind="show" identifier="gameVC" id="dyF-9L-dsA"/>
                     </connections>
                 </viewController>
@@ -320,18 +340,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Слово" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-fu-NlX">
-                                <rect key="frame" x="55" y="382" width="304" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="Jy5-Wo-dnd"/>
-                                    <constraint firstAttribute="height" constant="74" id="udm-5F-hgN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="796853" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-Xf-w9h">
-                                <rect key="frame" x="0.0" y="44" width="540" height="808"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="796853" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-Xf-w9h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-22" translatesAutoresizingMaskIntoConstraints="NO" id="8iQ-nf-fVi">
                                 <rect key="frame" x="153.5" y="117" width="107" height="99"/>
@@ -400,6 +410,9 @@
                                 <buttonConfiguration key="configuration" style="filled">
                                     <backgroundConfiguration key="background" image="pixil-frame-0-13"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextPressed" destination="P8U-xo-8y0" eventType="touchUpInside" id="kM6-pz-s9Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-ya-pyR">
                                 <rect key="frame" x="336" y="230" width="50" height="50"/>
@@ -422,6 +435,16 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pixil-frame-0-9" translatesAutoresizingMaskIntoConstraints="NO" id="L2L-dA-kAg">
                                 <rect key="frame" x="62" y="288" width="332" height="288"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Слово" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-fu-NlX">
+                                <rect key="frame" x="55" y="382" width="304" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Jy5-Wo-dnd"/>
+                                    <constraint firstAttribute="height" constant="74" id="udm-5F-hgN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mJE-XZ-Vxv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -449,6 +472,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Tke-38-Yra"/>
                     <connections>
+                        <outlet property="nextButton" destination="7wN-Ag-DIX" id="fx8-Dc-osj"/>
+                        <outlet property="wordLabel" destination="UKT-fu-NlX" id="9iV-dq-Aqb"/>
                         <segue destination="2L9-KQ-KbY" kind="show" identifier="resultVC" id="Hct-ze-9HZ"/>
                     </connections>
                 </viewController>
@@ -636,6 +661,9 @@
             <point key="canvasLocation" x="60.869565217391312" y="868.52678571428567"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bvr-pH-04R"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="796853" width="540" height="960"/>
         <image name="9-94796_boston-pixel-phone-wallpaper-src-most-popular-google" width="1080" height="1920"/>
