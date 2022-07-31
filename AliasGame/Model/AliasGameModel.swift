@@ -8,5 +8,14 @@
 import Foundation
 
 struct AliasGameModel {
+    var team: Team
     
+    var timeLength: Int
+    
+    var guessedWords = 0
+    var missedWords = 0
+    
+    var totalWords: Int {
+        return guessedWords + missedWords
+    }
 }

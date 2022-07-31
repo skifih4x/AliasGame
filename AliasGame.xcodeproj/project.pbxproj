@@ -23,6 +23,7 @@
 		E4786A442893BFBF00F1B961 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4786A412893BFBF00F1B961 /* Rules.swift */; };
 		E4786A452893BFBF00F1B961 /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4786A422893BFBF00F1B961 /* CategoryManager.swift */; };
 		E4786A462893BFBF00F1B961 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4786A432893BFBF00F1B961 /* Category.swift */; };
+		E4786A542896967000F1B961 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4786A532896967000F1B961 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E4786A412893BFBF00F1B961 /* Rules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		E4786A422893BFBF00F1B961 /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
 		E4786A432893BFBF00F1B961 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E4786A532896967000F1B961 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				00A473EE2891C5CC0095DE30 /* NetworkManager.swift */,
 				00A473F02891C5DA0095DE30 /* JokeData.swift */,
 				00A473F22891C5E60095DE30 /* AliasGameModel.swift */,
+				E4786A532896967000F1B961 /* Team.swift */,
 				E4786A432893BFBF00F1B961 /* Category.swift */,
 				E4786A422893BFBF00F1B961 /* CategoryManager.swift */,
 				E4786A412893BFBF00F1B961 /* Rules.swift */,
@@ -210,6 +213,7 @@
 			files = (
 				00A473E42891BCC40095DE30 /* RulesViewController.swift in Sources */,
 				00A473E22891BC9C0095DE30 /* ThemeGameViewController.swift in Sources */,
+				E4786A542896967000F1B961 /* Team.swift in Sources */,
 				00D353D52891AF000086ACA7 /* StartViewController.swift in Sources */,
 				00A473E82891BCFA0095DE30 /* ResultsViewController.swift in Sources */,
 				00A473EF2891C5CC0095DE30 /* NetworkManager.swift in Sources */,
