@@ -19,6 +19,7 @@
 		00D353D52891AF000086ACA7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D353D42891AF000086ACA7 /* StartViewController.swift */; };
 		00D353DA2891AF010086ACA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D353D92891AF010086ACA7 /* Assets.xcassets */; };
 		00D353DD2891AF010086ACA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D353DB2891AF010086ACA7 /* LaunchScreen.storyboard */; };
+		00FCB26628981DE600E1915E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FCB26528981DE600E1915E /* Main.storyboard */; };
 		63D2675C2896A3E8005A33B3 /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2675B2896A3E8005A33B3 /* WordService.swift */; };
 		63D267612896A739005A33B3 /* english_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = 63D2675D2896A738005A33B3 /* english_words_nouns.csv */; };
 		63D267622896A739005A33B3 /* russian_words_nouns.csv in Resources */ = {isa = PBXBuildFile; fileRef = 63D2675E2896A739005A33B3 /* russian_words_nouns.csv */; };
@@ -45,6 +46,7 @@
 		00D353D92891AF010086ACA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00D353DC2891AF010086ACA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D353DE2891AF010086ACA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FCB26528981DE600E1915E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		63D2675B2896A3E8005A33B3 /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
 		63D2675D2896A738005A33B3 /* english_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english_words_nouns.csv; sourceTree = "<group>"; };
 		63D2675E2896A739005A33B3 /* russian_words_nouns.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = russian_words_nouns.csv; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				00D353DB2891AF010086ACA7 /* LaunchScreen.storyboard */,
+				00FCB26528981DE600E1915E /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FCB26628981DE600E1915E /* Main.storyboard in Resources */,
 				00D353DD2891AF010086ACA7 /* LaunchScreen.storyboard in Resources */,
 				63D267642896A739005A33B3 /* sport_words_nouns.csv in Resources */,
 				00D353DA2891AF010086ACA7 /* Assets.xcassets in Resources */,

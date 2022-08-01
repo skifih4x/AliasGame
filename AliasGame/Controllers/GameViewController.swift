@@ -27,7 +27,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var startGame: UIButton!
 
-    @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
 
     
@@ -117,6 +116,7 @@ class GameViewController: UIViewController {
     func showWord() {
         wordLabel.text = WordStore.shared.randomWord()
     }
+}
     /*
 
     // MARK: - Navigation
@@ -151,4 +151,4 @@ class GameViewController: UIViewController {
                 } catch let error { print(error.localizedDescription) }
         }
 }
-
+*/
