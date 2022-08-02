@@ -11,10 +11,8 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet var overAllResultLabel: UILabel!
     
-    @IBOutlet var guessWordsLabel: UILabel!
-    @IBOutlet var missedWordsLabel: UILabel!
-    
-    @IBOutlet var jokeJsonLabel: UILabel!
+    @IBOutlet var jokeJsonHeaderLabel: UILabel!
+    @IBOutlet var jokeJsonFooterLabel: UILabel!
     
     var overAllResults: String!
     var guessWords: String!
@@ -22,10 +20,14 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        overAllResultLabel.text = "overAllResults"
-//        guessWordsLabel≈ç.text = guessWords
-//        missedWordsLabel.text = missWords
+        overAllResultLabel.text = overAllResults
+        navigationItem.hidesBackButton = true
+        jokeResultsVC()
     }
-
+    func jokeResultsVC() {
+        NetworkManager.shared.fetchJoke { joke in
+            self.jokeJsonHeaderLabel.text = joke.setup
+            self.jokeJsonFooterLabel.text = joke.punchline
+        }
+    }
 }

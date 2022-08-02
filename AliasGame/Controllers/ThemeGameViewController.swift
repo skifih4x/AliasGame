@@ -18,10 +18,10 @@ class ThemeGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topicOne.setTitle("English Words", for: .normal)
-        topicTwo.setTitle("Russian Words", for: .normal)
-        topicThree.setTitle("Sport Words", for: .normal)
-        topicFour.setTitle("Random Words", for: .normal)
+        topicOne.setTitle("Выбрать", for: .normal)
+        topicTwo.setTitle("Выбрать", for: .normal)
+        topicThree.setTitle("Выбрать", for: .normal)
+        topicFour.setTitle("Выбрать", for: .normal)
         
     }
     

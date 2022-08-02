@@ -8,6 +8,6 @@
 import Foundation
 
 struct JokeData: Decodable {
-    let setup: String
+    var setup: String
     let punchline: String
 }
