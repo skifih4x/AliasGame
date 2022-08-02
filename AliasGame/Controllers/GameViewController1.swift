@@ -39,12 +39,9 @@ class GameViewController: UIViewController {
     
     @IBAction func startGame(_ sender: UIButton) {
         //кнопки cancel и done становяться активными и их альфа изменяется на 1
-        //кнопка startGame становиться неактивной и ее альфа меняется на 0.5
-        //запускает отсчет времени
-        //по окончании отсчета по хорошему надо что то делать с очками ?
         timer.invalidate()
         startGame.alpha = 0.5
-//                wordLabel.text = currentWord
+        //                wordLabel.text = currentWord
         wordLabel.text = ""
         showWord()
         
@@ -56,13 +53,11 @@ class GameViewController: UIViewController {
         totalTime = 61
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         
-        if currentScore <= 0 {
-            currentScore = 0
-        } else {
-            currentScore -= 1
-        }
-        
         currentScore -= 1
+        
+        if currentScore < 0 {
+            currentScore = 0
+        }
         resultLabel.text = String(currentScore)
         
         if wordCount > 10 {
@@ -70,13 +65,22 @@ class GameViewController: UIViewController {
         } else {
             showWord()
         }
-        
-//        didGetJoke()
-        // как только закончилось время кнопка должна стать неактивной
-        // изменяется ее альфа на 0.5
+        playSound(nameSound: "bad")
+                didGetJoke()
     }
     
     @IBAction func doneButton(_ sender: UIButton) {
+        
+        let i = bonusWord()
+        
+        if i == 1 {
+            currentScore += 3
+            //            print(i)
+        } else {
+            resultLabel.textColor = .black
+        }
+        
+        
         timer.invalidate()
         totalTime = 61
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
@@ -89,9 +93,8 @@ class GameViewController: UIViewController {
             showWord()
         }
         
-//        didGetJoke()
-        // как только закончилось время кнопка должнать стать неактивной
-        // изменяется ее альфа на 0.5
+        playSound(nameSound: "good")
+                didGetJoke()
     }
     
     @objc func updateTimer() {
@@ -106,9 +109,20 @@ class GameViewController: UIViewController {
             currentScore = 0
             cancelButton.alpha = 0.5
             doneButton.alpha = 0.5
-            
-            //            playSound()
         }
+    }
+    
+    func bonusWord() -> Int {
+        let randomWords = Int.random(in: 1...10)
+        print(randomWords)
+        if randomWords == 1 {
+            wordLabel.text = "Cлово"
+            wordLabel.textColor = .red
+        } else {
+            resultLabel.textColor = .black
+        }
+        
+        return randomWords
     }
     
     var topic = "russian_words_nouns" {
@@ -130,26 +144,26 @@ class GameViewController: UIViewController {
         guard let destination = segue.destination as? ResultsViewController else { return }
         destination.overAllResults = resultLabel.text
     }
-    // Method wich do play wav source (раскомментировать если нужно)
-    //        func playSound() {
-    //            guard let url = Bundle.main.url(
-    //                forResource: "alarm_sound",
-    //                withExtension: "mp3") else { return }
-    //
-    //            do {
-    //                try AVAudioSession.sharedInstance().setCategory(
-    //                    .playback, mode: .default)
-    //                try AVAudioSession.sharedInstance().setActive(true)
-    //
-    //                player = try AVAudioPlayer(
-    //                    contentsOf: url,
-    //                    fileTypeHint: AVFileType.mp3.rawValue)
-    //
-    //                guard let player = player else { return }
-    //                player.play()
-    //
-    //                } catch let error { print(error.localizedDescription) }
-    //        }
+    
+    func playSound(nameSound: String) {
+        guard let url = Bundle.main.url(
+            forResource: nameSound,
+            withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(
+                .playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(
+                contentsOf: url,
+                fileTypeHint: AVFileType.mp3.rawValue)
+            
+            guard let player = player else { return }
+            player.play()
+            
+        } catch let error { print(error.localizedDescription) }
+    }
 }
 
 //MARK: - UIAlertController
